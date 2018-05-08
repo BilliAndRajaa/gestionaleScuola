@@ -1,5 +1,5 @@
 package schoolManager;
-
+//prova
 
 public class QueryInsert {
    
