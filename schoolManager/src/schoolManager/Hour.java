@@ -10,7 +10,7 @@ import java.util.*;
 
 /**
  *
- * @author Bilel
+ * @author Bilel and Rajaa
  */
 
 public class Hour {
