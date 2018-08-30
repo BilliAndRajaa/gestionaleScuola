@@ -6,11 +6,9 @@
  */
 package schoolManager;
 
-import java.util.*;
-
 /**
- *
- * @author Bilel and Rajaa
+ *The Hour class represents a range of hours in the timetable with a begining and an end as Integers,
+ * the object is also identified with an Id.
  */
 
 public class Hour {

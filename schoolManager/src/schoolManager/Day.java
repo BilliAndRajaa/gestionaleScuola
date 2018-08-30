@@ -6,8 +6,8 @@
 package schoolManager;
 import java.util.*;
 /**
- *
- * @author Bilel
+ *The Day class represents the a day in the timetable, it'ss characterized with an ArrayList of Hours objects, and an index
+ * indicating the day of the week.
  */
 public class Day {
    

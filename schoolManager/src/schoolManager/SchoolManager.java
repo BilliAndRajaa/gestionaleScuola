@@ -6,13 +6,11 @@
 package schoolManager;
 
 /**
- *
- * @author Bilel
+ *This class is used as the main function containing the code to be run at start.
  */
 public class SchoolManager {
     public static void main(String[] args) {
-
-        
-        
+        Graphics.Login a=new Graphics.Login();
+        a.setVisible(true);
     }
 }

@@ -6,8 +6,7 @@
 package schoolManager;
 import java.util.*;
 /**
- *
- * @author Bilel
+ *The Week class represents the timetable, it'ss characterized with an ArrayList of Day objects.
  */
 public class Week {
     private ArrayList<Day> days;
@@ -23,4 +22,8 @@ public class Week {
     public void setDays(ArrayList<Day> days) {
         this.days = days;
     }
+
+    
+    
+    
 }

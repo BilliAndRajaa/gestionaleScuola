@@ -8,8 +8,8 @@ package schoolManager;
 import java.util.*;
 
 /**
- *
- * @author Bilel
+ *The Teacher class represents a teacher, having name, surname and a date of birth; it's also characterized by an Id, a freeday,
+ * and 2 ArrayList<Integer> called subjects and classes.  
  */
 public class Teacher {
     private String name;
