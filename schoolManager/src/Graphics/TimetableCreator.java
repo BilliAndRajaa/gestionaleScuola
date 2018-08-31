@@ -33,7 +33,7 @@ DefaultListModel<String> modelTeacherList = new DefaultListModel<>();
 
 int Language;
     /**
-     * Creates new form TimetableCreator
+     * Creates new form TimetableCreator.
      */
     public TimetableCreator(DatabaseController controller,ArrayList <Classroom> classrooms,ArrayList <SchoolClass> schoolclasses,ArrayList <Teacher> teachers,ArrayList<Course> courses,int Language) {
         initComponents();

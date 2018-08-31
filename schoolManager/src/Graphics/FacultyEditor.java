@@ -30,11 +30,7 @@ ArrayList<Integer> addedHoursList=new ArrayList<>();
 int totalHours=0;
 int Language;
     /**
-     * Creates new form FacultyEditor
-     * @param controller
-     * @param faculties
-     * @param coursesAsParameter
-     * @param Language
+     * This class permits to edit a Faculty object.
      */
     public FacultyEditor(DatabaseController controller,ArrayList<Faculty> faculties,ArrayList<Course> coursesAsParameter,int Language) {
         initComponents();

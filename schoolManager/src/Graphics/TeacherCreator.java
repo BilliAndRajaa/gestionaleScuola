@@ -35,8 +35,8 @@ int Language;
      /**
      * the form takes 3 parameters:
      * - A DatabaseController object for the use of the query QueryInsert.addTeacher
-     * - An ArrayList<Course> courses
-     * - ArrayList<SchoolClass> SchoolClasses   
+     * - An ArrayList courses
+     * - ArrayList  SchoolClasses   
      * - An Integer called Language to control if a translation is needed.
      */
     public TeacherCreator(DatabaseController controller,ArrayList<Course> courses,ArrayList<SchoolClass> SchoolClasses, int Language) {

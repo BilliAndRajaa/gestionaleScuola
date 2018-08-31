@@ -121,17 +121,6 @@ public class Methods {
     } 
     /**
      * The function createHour checks with the "time overlap" queries if an hour object could be created.
-     * @param controller
-     * @param begin
-     * @param end
-     * @param day
-     * @param IdClass
-     * @param classroom
-     * @param teachers
-     * @param IdCourse
-     * @param description
-     * @return
-     * @throws SQLException 
      */
     public static boolean createHour(DatabaseController controller,int begin, int end, int day, int IdClass,Classroom classroom, ArrayList<Integer> teachers, int IdCourse,String description) throws SQLException{
             for(int i=0;i<teachers.size();i++){
@@ -149,10 +138,7 @@ public class Methods {
             return true;
     }
     /**
-     * The function assignTeacherToClass assigns automatically all the  necessary teachers to the schoolclass selected
-     * @param controller
-     * @param IdClass
-     * @throws SQLException 
+     * The function assignTeacherToClass assigns automatically all the  necessary teachers to the schoolclass selected.
      */
     public static void assignTeachersToClass(DatabaseController controller,int IdClass) throws SQLException{
         int idFaculty=QuerySelect.SelectFacultyFromClass(controller, IdClass);
@@ -191,13 +177,6 @@ public class Methods {
     
     /**
      * The function generateTable creates a String containing html code of a grid representing the Week passed as param.
-     * @param controller
-     * @param week
-     * @param courses
-     * @param teachers
-     * @param mode
-     * @return
-     * @throws SQLException 
      */
     public static String generateTable(DatabaseController controller,Week week, ArrayList <Course>courses,ArrayList<Integer> teachers, int mode) throws SQLException{
     String[] colors=new String[7];
@@ -287,13 +266,6 @@ public class Methods {
     /**
      * The function generateTable creates a String containing html code of a grid representing the Week passed as param,
      * with the selected range of hours colored differently.
-     * @param controller
-     * @param week
-     * @param courses
-     * @param teachers
-     * @param idHour
-     * @return
-     * @throws SQLException 
      */
  public static String generateTableWithSelectedHour(DatabaseController controller,Week week, ArrayList <Course>courses,ArrayList<Integer> teachers, int idHour) throws SQLException{
     String[] colors=new String[7];

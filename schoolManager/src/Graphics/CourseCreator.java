@@ -20,9 +20,7 @@ public class CourseCreator extends javax.swing.JFrame {
 DatabaseController controller;
     private final int Language;
     /**
-     * Creates new form CourseCreator
-     * @param controller
-     * @param Language
+     * Creates new form CourseCreator.
      */
     public CourseCreator(DatabaseController controller,int Language) {
         initComponents();

@@ -13,8 +13,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- *
- * @author Bilel
+ *This class manages all connections and queries to the database.
  */
 public class DatabaseController {
     public static final String MySQLDriver= "com.mysql.jdbc.Driver";
@@ -47,10 +46,5 @@ public class DatabaseController {
 			statement.close();
 			connection.close();
 		}
-    }
-    void execute(String string) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+    }  
 }

@@ -21,7 +21,7 @@ public class CourseEditor extends javax.swing.JFrame {
 ArrayList <Course> courses;
 DatabaseController controller;
     /**
-     * Creates new form CourseEditor
+     * Creates new form CourseEditor.
      */
     public CourseEditor(DatabaseController controller,ArrayList <Course> courses, int Language) {
         initComponents();

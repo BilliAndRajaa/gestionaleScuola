@@ -26,10 +26,7 @@ ArrayList<Integer> addedHoursList=new ArrayList<>();
 int totalHours=0;
 int Language;
     /**
-     * Creates new form FacultyCreator
-     * @param controller
-     * @param courses
-     * @param Language
+     * Creates new form FacultyCreator.
      */
     public FacultyCreator(DatabaseController controller,ArrayList<Course> courses,int Language) {
         initComponents();

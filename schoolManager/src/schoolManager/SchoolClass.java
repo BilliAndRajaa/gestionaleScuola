@@ -6,7 +6,7 @@
 package schoolManager;
 import java.util.*;
 /**
- *The SchoolClass class reprents a schoolclass, with an id, name, faculty, and ArrayList<Integer> called teachers with id of the 
+ *The SchoolClass class reprents a schoolclass, with an id, name, faculty, and ArrayList of Integers called teachers with id of the 
  * teachers associated, a char representing the section and 3 Integers for year, number of studets and id of the main classroom.
  */
 public class SchoolClass {

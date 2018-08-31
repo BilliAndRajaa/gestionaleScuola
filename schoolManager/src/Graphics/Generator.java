@@ -22,10 +22,7 @@ public class Generator extends javax.swing.JFrame {
     private final SchoolClass schoolclass;
 
     /**
-     * Creates new form Generator
-     * @param controller
-     * @param Language
-     * @param schoolclass
+     * Creates new form Generator.
      */
     public Generator(DatabaseController controller, int Language, SchoolClass schoolclass) {
         initComponents();

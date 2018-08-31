@@ -40,9 +40,7 @@ public class NewJFrame extends javax.swing.JFrame {
     int Language;
     int Building=0;
     /**
-     * Creates new form NewJFrame
-     * @param controller
-     * @param Language
+     * Creates new form NewJFrame.
      */
     public NewJFrame(DatabaseController controller,int Language) {
         initComponents();
@@ -158,7 +156,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton23 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
-        popupMenu1 = new java.awt.PopupMenu();
         jSplitPane1 = new javax.swing.JSplitPane();
         jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -688,13 +685,6 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGap(39, 39, 39))))
         );
 
-        popupMenu1.setLabel("popupMenu1");
-        popupMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                popupMenu1ActionPerformed(evt);
-            }
-        });
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 204));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -711,11 +701,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(910, 681));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 170, -1));
 
         button1.setActionCommand("SHOW ");
@@ -725,31 +710,15 @@ public class NewJFrame extends javax.swing.JFrame {
                 button1MouseClicked(evt);
             }
         });
-        button1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
-            }
-        });
         jPanel1.add(button1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 90, 40));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Teacher", "Schoolclass", "Classroom" }));
-        jComboBox2.addItemListener(new java.awt.event.ItemListener() {
-            public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                jComboBox2ItemStateChanged(evt);
-            }
-        });
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
             }
         });
         jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 240, 30));
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 240, 30));
 
         jScrollPane1.setBackground(new java.awt.Color(204, 204, 255));
@@ -806,20 +775,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 jButton1MouseClicked(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 90, 40));
 
         jButton2.setText("EDIT");
-        jButton2.setActionCommand("EDIT");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
-            }
-        });
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -936,11 +894,6 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_button1ActionPerformed
-
     private void button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_button1MouseClicked
         try {
             int index=jComboBox1.getSelectedIndex();
@@ -1012,17 +965,6 @@ public class NewJFrame extends javax.swing.JFrame {
         buildCombobox();
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
-    private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
-        
-    }//GEN-LAST:event_jComboBox2ItemStateChanged
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-       
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
         buildCombobox();
@@ -1066,10 +1008,6 @@ public class NewJFrame extends javax.swing.JFrame {
         buildCombobox();
     }//GEN-LAST:event_jButton7MouseClicked
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-      
-    }//GEN-LAST:event_jButton2MouseClicked
-
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
         // TODO add your handling code here:
         jPanel4.removeAll();
@@ -1094,11 +1032,6 @@ public class NewJFrame extends javax.swing.JFrame {
         builTeachers();
         showTeacher();
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         resetTimetable();
@@ -1127,16 +1060,10 @@ public class NewJFrame extends javax.swing.JFrame {
         creator.setVisible(true);
     }//GEN-LAST:event_jButton21ActionPerformed
 
-    private void popupMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupMenu1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_popupMenu1ActionPerformed
-
     private void jList5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList5MouseClicked
         // TODO add your handling code here:
          if(evt.getClickCount()==2){
-            int index=jList5.locationToIndex(evt.getPoint());
-             //System.out.println(jList5.);
-                                
+            int index=jList5.locationToIndex(evt.getPoint());                      
          }
     }//GEN-LAST:event_jList5MouseClicked
 
@@ -1517,7 +1444,6 @@ public class NewJFrame extends javax.swing.JFrame {
         }
     }
     private void showTeacher(){
-         // TODO add your handling code here:
         int index=jComboBox6.getSelectedIndex();
         if(index!=-1){
         Teacher teacher=null;
@@ -1600,7 +1526,14 @@ public class NewJFrame extends javax.swing.JFrame {
         int index=jComboBox1.getSelectedIndex();
         int id=0;
         if(resultIds.isEmpty()){
-            id=teachers.get(index).getId();
+            switch(jComboBox2.getSelectedIndex()){
+                case 0:id=teachers.get(index).getId();
+                break;
+                case 1:id=schoolclasses.get(index).getId();
+                break;
+                case 2:id=classrooms.get(index).getId();
+                break;
+            }
         }else{
             id=resultIds.get(index);
         }
@@ -1638,7 +1571,7 @@ public class NewJFrame extends javax.swing.JFrame {
          update();
     }
     /**
-    * The function translate, translates the text of the labels and button from english to italian.
+    * The function translate, translates the text of the labels and buttons from english to italian.
     */
     private void translate(){
         jButton1.setText("CERCA");
@@ -1794,6 +1727,5 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
-    private java.awt.PopupMenu popupMenu1;
     // End of variables declaration//GEN-END:variables
 }
